@@ -1,0 +1,23 @@
+<html>
+<body bgcolor="#F9E076">
+<h1>WELCOME TO THE HARDWARE MANAGEMENT SYSTEMS</h1>
+<h2><p>Flexile e-shopping website to buy/sell your products at your convinience.</p></h2>
+<b><p style="text-align:right"><a href="login.html">SIGN UP</a></p></b>
+<b><p style="text-align:center"><a href="buysell.html">CLICK HERE TO BUY/SELL PRODUCTS</a></p></b>
+<canvas id="myCanvas" width="720" height="420"
+style="border:8px solid #000000;">
+<img id="home" 
+src="home.jpg">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+window.onload = function() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var img = document.getElementById("home");
+   ctx.drawImage(img, 10, 10);
+};
+</script>
+</body>
+</html>
